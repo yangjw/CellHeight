@@ -21,6 +21,17 @@
 		1A2D3593195953B700BB939F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A2D3575195953B700BB939F /* UIKit.framework */; };
 		1A2D359B195953B700BB939F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1A2D3599195953B700BB939F /* InfoPlist.strings */; };
 		1A2D359D195953B700BB939F /* SignDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A2D359C195953B700BB939F /* SignDemoTests.m */; };
+		1A2D35A81959540C00BB939F /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A2D35A71959540C00BB939F /* NSString+MD5.m */; };
+		1A9CEFFB195CFCC30077B46F /* _BBCV02797341115212217734.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1A9CEFFA195CFCC30077B46F /* _BBCV02797341115212217734.jpg */; };
+		1A9CEFFE195D06BB0077B46F /* AlbumTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9CEFFD195D06BB0077B46F /* AlbumTableViewCell.m */; };
+		1A9CF001195D08560077B46F /* Album.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9CF000195D08560077B46F /* Album.m */; };
+		1A9CF007195D0AE70077B46F /* AlumRichTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9CF006195D0AE70077B46F /* AlumRichTextView.m */; };
+		1A9CF00C195D10FA0077B46F /* AlbumPhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9CF00B195D10FA0077B46F /* AlbumPhotoCollectionViewCell.m */; };
+		1A9CF00E195D11610077B46F /* avator@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A9CF00D195D11610077B46F /* avator@2x.png */; };
+		1A9CF011195D11940077B46F /* AlbumCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9CF010195D11940077B46F /* AlbumCollectionViewFlowLayout.m */; };
+		1A9CF014195D12DD0077B46F /* AlbumOperateMore@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A9CF012195D12DD0077B46F /* AlbumOperateMore@2x.png */; };
+		1A9CF015195D12DD0077B46F /* AlbumOperateMoreHL@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A9CF013195D12DD0077B46F /* AlbumOperateMoreHL@2x.png */; };
+		1A9CF01A195D44190077B46F /* UIColor+Random.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9CF019195D44190077B46F /* UIColor+Random.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +64,24 @@
 		1A2D3598195953B700BB939F /* SignDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SignDemoTests-Info.plist"; sourceTree = "<group>"; };
 		1A2D359A195953B700BB939F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1A2D359C195953B700BB939F /* SignDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SignDemoTests.m; sourceTree = "<group>"; };
+		1A2D35A61959540C00BB939F /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
+		1A2D35A71959540C00BB939F /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
+		1A9CEFFA195CFCC30077B46F /* _BBCV02797341115212217734.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = _BBCV02797341115212217734.jpg; sourceTree = "<group>"; };
+		1A9CEFFC195D06BB0077B46F /* AlbumTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumTableViewCell.h; sourceTree = "<group>"; };
+		1A9CEFFD195D06BB0077B46F /* AlbumTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumTableViewCell.m; sourceTree = "<group>"; };
+		1A9CEFFF195D08560077B46F /* Album.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Album.h; sourceTree = "<group>"; };
+		1A9CF000195D08560077B46F /* Album.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Album.m; sourceTree = "<group>"; };
+		1A9CF005195D0AE70077B46F /* AlumRichTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlumRichTextView.h; sourceTree = "<group>"; };
+		1A9CF006195D0AE70077B46F /* AlumRichTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlumRichTextView.m; sourceTree = "<group>"; };
+		1A9CF00A195D10FA0077B46F /* AlbumPhotoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumPhotoCollectionViewCell.h; sourceTree = "<group>"; };
+		1A9CF00B195D10FA0077B46F /* AlbumPhotoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumPhotoCollectionViewCell.m; sourceTree = "<group>"; };
+		1A9CF00D195D11610077B46F /* avator@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "avator@2x.png"; sourceTree = "<group>"; };
+		1A9CF00F195D11940077B46F /* AlbumCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumCollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		1A9CF010195D11940077B46F /* AlbumCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumCollectionViewFlowLayout.m; sourceTree = "<group>"; };
+		1A9CF012195D12DD0077B46F /* AlbumOperateMore@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AlbumOperateMore@2x.png"; sourceTree = "<group>"; };
+		1A9CF013195D12DD0077B46F /* AlbumOperateMoreHL@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AlbumOperateMoreHL@2x.png"; sourceTree = "<group>"; };
+		1A9CF018195D44190077B46F /* UIColor+Random.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Random.h"; sourceTree = "<group>"; };
+		1A9CF019195D44190077B46F /* UIColor+Random.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Random.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,13 +141,31 @@
 		1A2D3577195953B700BB939F /* SignDemo */ = {
 			isa = PBXGroup;
 			children = (
+				1A9CF012195D12DD0077B46F /* AlbumOperateMore@2x.png */,
+				1A9CF013195D12DD0077B46F /* AlbumOperateMoreHL@2x.png */,
+				1A9CF00D195D11610077B46F /* avator@2x.png */,
 				1A2D3580195953B700BB939F /* AppDelegate.h */,
 				1A2D3581195953B700BB939F /* AppDelegate.m */,
 				1A2D3583195953B700BB939F /* Main.storyboard */,
 				1A2D3586195953B700BB939F /* ViewController.h */,
 				1A2D3587195953B700BB939F /* ViewController.m */,
+				1A2D35A61959540C00BB939F /* NSString+MD5.h */,
+				1A2D35A71959540C00BB939F /* NSString+MD5.m */,
 				1A2D3589195953B700BB939F /* Images.xcassets */,
+				1A9CEFFA195CFCC30077B46F /* _BBCV02797341115212217734.jpg */,
 				1A2D3578195953B700BB939F /* Supporting Files */,
+				1A9CEFFF195D08560077B46F /* Album.h */,
+				1A9CF000195D08560077B46F /* Album.m */,
+				1A9CEFFC195D06BB0077B46F /* AlbumTableViewCell.h */,
+				1A9CEFFD195D06BB0077B46F /* AlbumTableViewCell.m */,
+				1A9CF005195D0AE70077B46F /* AlumRichTextView.h */,
+				1A9CF006195D0AE70077B46F /* AlumRichTextView.m */,
+				1A9CF00A195D10FA0077B46F /* AlbumPhotoCollectionViewCell.h */,
+				1A9CF00B195D10FA0077B46F /* AlbumPhotoCollectionViewCell.m */,
+				1A9CF00F195D11940077B46F /* AlbumCollectionViewFlowLayout.h */,
+				1A9CF010195D11940077B46F /* AlbumCollectionViewFlowLayout.m */,
+				1A9CF018195D44190077B46F /* UIColor+Random.h */,
+				1A9CF019195D44190077B46F /* UIColor+Random.m */,
 			);
 			path = SignDemo;
 			sourceTree = "<group>";
@@ -228,7 +275,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A9CF014195D12DD0077B46F /* AlbumOperateMore@2x.png in Resources */,
 				1A2D358A195953B700BB939F /* Images.xcassets in Resources */,
+				1A9CEFFB195CFCC30077B46F /* _BBCV02797341115212217734.jpg in Resources */,
+				1A9CF015195D12DD0077B46F /* AlbumOperateMoreHL@2x.png in Resources */,
+				1A9CF00E195D11610077B46F /* avator@2x.png in Resources */,
 				1A2D357C195953B700BB939F /* InfoPlist.strings in Resources */,
 				1A2D3585195953B700BB939F /* Main.storyboard in Resources */,
 			);
@@ -249,9 +300,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A9CF01A195D44190077B46F /* UIColor+Random.m in Sources */,
+				1A9CF007195D0AE70077B46F /* AlumRichTextView.m in Sources */,
 				1A2D3588195953B700BB939F /* ViewController.m in Sources */,
 				1A2D3582195953B700BB939F /* AppDelegate.m in Sources */,
+				1A9CF00C195D10FA0077B46F /* AlbumPhotoCollectionViewCell.m in Sources */,
+				1A9CF001195D08560077B46F /* Album.m in Sources */,
+				1A9CEFFE195D06BB0077B46F /* AlbumTableViewCell.m in Sources */,
+				1A2D35A81959540C00BB939F /* NSString+MD5.m in Sources */,
 				1A2D357E195953B700BB939F /* main.m in Sources */,
+				1A9CF011195D11940077B46F /* AlbumCollectionViewFlowLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,6 +514,7 @@
 				1A2D35A2195953B700BB939F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1A2D35A3195953B700BB939F /* Build configuration list for PBXNativeTarget "SignDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +523,7 @@
 				1A2D35A5195953B700BB939F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
