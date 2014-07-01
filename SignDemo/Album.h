@@ -39,3 +39,5 @@
 @property (nonatomic, strong) NSDate *timestamp;
 
 @end
+
+

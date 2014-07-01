@@ -66,6 +66,7 @@
     NSInteger index = [[NSUserDefaults standardUserDefaults] integerForKey:@"IndexRow"];
     Album *album = [albumConfigureArray objectAtIndex:index];
     [album.albumShareComments addObject:@"1"];
+     [album.albumShareLikes addObject:@"1"];
     [_table reloadRowsAtIndexPaths:[NSArray arrayWithObject:[NSIndexPath indexPathForRow:index inSection:0]] withRowAnimation:UITableViewRowAnimationFade];
 }
 

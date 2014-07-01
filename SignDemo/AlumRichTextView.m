@@ -10,6 +10,7 @@
 #import "AlbumPhotoCollectionViewCell.h"
 #import "AlbumCollectionViewFlowLayout.h"
 #import "UIColor+Random.h"
+#import "CommentView.h"
 
 // 头像大小以及头像与其他控件的距离
 static CGFloat const kAvatarImageSize = 40.0f;
@@ -18,6 +19,7 @@ static CGFloat const kAlbumAvatorSpacing = 15.0f;
 
 
 #define kPhotoCollectionViewCellIdentifier @"PhotoCollectionViewCellIdentifier"
+#define KCommentTableViewCellIdentifier @"CommentTableViewCellIdentifier"
 
 @interface AlumRichTextView()<UICollectionViewDelegate,UICollectionViewDataSource>
 
@@ -29,7 +31,10 @@ static CGFloat const kAlbumAvatorSpacing = 15.0f;
 @property (nonatomic, strong) UILabel *timestampLabel;
 @property (nonatomic, strong) UIButton *commentButton;
 @property (nonatomic,strong)UIButton *superButton;
-@property (nonatomic, strong) UIView *commentView;
+@property (nonatomic, strong) CommentView *commentView;
+
+//@property (nonatomic,strong)UITableView *commentTableView;
+
 
 @end
 
@@ -60,12 +65,22 @@ static CGFloat const kAlbumAvatorSpacing = 15.0f;
     NSInteger row = (photos.count / 3 + (photos.count % 3 ? 1 : 0));
     return (row * (kAlbumPhotoSize) + ((row - 1) * kAlbumPhotoInsets));
 }
-//得到评论和赞的高度
+//得到评论的高度
 +(CGFloat)getCommentViewHeightWithComments:(NSArray *)comments
 {
     if ([comments count] >0)
     {
         return 40 * [comments count];
+    }
+    return 0;
+}
+
+//得到评论的高度
++(CGFloat)getsupperViewHeightWithComments:(NSArray *)suppers
+{
+    if ([suppers count] >0)
+    {
+        return 2 * [suppers count];
     }
     return 0;
 }
@@ -82,8 +97,9 @@ static CGFloat const kAlbumAvatorSpacing = 15.0f;
     richTextHeight += kAlbumPhotoInsets;
     richTextHeight += [self getSharePhotoCollectionViewHeightWithPhotos:currentAlbum.albumSharePhotos];
     
-    richTextHeight += [self getCommentViewHeightWithComments:currentAlbum.albumShareComments];
-    
+//    richTextHeight += [self getCommentViewHeightWithComments:currentAlbum.albumShareComments];
+//    richTextHeight += [self getsupperViewHeightWithComments:currentAlbum.albumShareLikes];
+    richTextHeight += [CommentView getHeightWithComments:currentAlbum.albumShareComments];
     
     richTextHeight += kAlbumContentLineSpacing;
     richTextHeight += kAlbumCommentButtonHeight;
@@ -99,9 +115,11 @@ static CGFloat const kAlbumAvatorSpacing = 15.0f;
     
     self.richTextView.attributedText = [[NSAttributedString alloc] initWithString:displayAlbum.albumShareContent];
     
-    self.timestampLabel.text = @"now";
+    self.timestampLabel.text = @"三个小时";
     
     self.commentView.backgroundColor = [UIColor randomColor];
+    
+    self.commentView.commentArray = displayAlbum.albumShareComments;
     
     [self.sharePhotoCollectionView reloadData];
     
@@ -189,10 +207,24 @@ static CGFloat const kAlbumAvatorSpacing = 15.0f;
 {
     if (!_commentView)
     {
-        _commentView = [[UIView alloc] initWithFrame:CGRectZero];
+        _commentView = [[CommentView alloc] initWithFrame:CGRectZero];
     }
     return _commentView;
 }
+
+//- (UITableView *)commentTableView
+//{
+//    if (_commentTableView)
+//    {
+//        _commentTableView = [[UITableView alloc] initWithFrame:CGRectZero];
+//        _commentTableView.delegate = self;
+//        _commentTableView.dataSource = self;
+//        _commentTableView.showsVerticalScrollIndicator = NO;
+//        _commentTableView.scrollEnabled = NO;
+//        
+//    }
+//    return _commentTableView;
+//}
 
 
 #pragma mark - 事件处理
@@ -255,7 +287,7 @@ static CGFloat const kAlbumAvatorSpacing = 15.0f;
     self.timestampLabel.frame = timestampLabelFrame;
     
     CGRect commentVieFrame = self.commentView.frame;
-    commentVieFrame = CGRectMake(richTextViewX, CGRectGetMaxY(commentButtonFrame) + kAlbumContentLineSpacing, CGRectGetWidth([[UIScreen mainScreen] bounds]) - richTextViewX - kAlbumAvatorSpacing, [AlumRichTextView getCommentViewHeightWithComments:self.displayAlbum.albumShareComments]);
+    commentVieFrame = CGRectMake(richTextViewX, CGRectGetMaxY(commentButtonFrame) + kAlbumContentLineSpacing, CGRectGetWidth([[UIScreen mainScreen] bounds]) - richTextViewX - kAlbumAvatorSpacing, [CommentView getHeightWithComments:self.displayAlbum.albumShareComments ]);
     self.commentView.frame = commentVieFrame;
     
     CGRect frame = self.frame;
